@@ -1,0 +1,1438 @@
+@font-face {
+    font-family: Lato;
+    src: url(lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Antonio;
+    src: url(antonio/Antonio-VariableFont_wght.ttf);
+}
+body{
+    background-color: #0d0d0d;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1{
+    color: #f2f2f2;
+    font-family: Antonio;
+    font-size: 72px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+h2{
+    color: #f2f2f2;
+    font-family: Antonio;
+    font-size: 64px;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+}
+h3{
+    font-size: 46px;
+    font-family: Antonio;
+    color: #d3f266;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+p{
+    font-family: Lato; 
+    font-size: 24px;
+    color: #f2f2f2;
+    font-weight: 400;
+    line-height: 34px;
+
+}
+a{
+    text-decoration: none;
+   
+}
+/* header */
+
+.header{
+    background-image: url(foto/pexels-maksim-goncharenok-4422913.png);
+    max-width: 1366px;
+    
+    height: 920px;
+    margin: 0 auto;
+
+
+}
+
+.header-gradient{
+    background-image: linear-gradient(0deg, #0d0d0d, transparent 35%);
+    width: 100%;
+    height: 100%;
+
+}
+
+.topBar{
+    padding: 59px 160px 59px 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.topBar-logo p{
+    font-size: 30px;
+    text-align: left;
+    margin: 16px 0;
+    color: #f2f2f2;
+    font-family: Lato;
+    width: 30%;
+       
+}
+
+.topBar-nav{
+    margin-top: 0;
+    width: 70%;
+    text-align: right;
+    
+}
+
+.topBar-nav ul{
+    list-style: none;
+}
+
+.topBar-nav ul li{
+    font-size: 30px;
+    display: inline;
+    padding: 0 17px;
+    color: #f2f2f2;
+    font-family: Lato;
+    letter-spacing: 0px;
+    transition: color 0.2s ease-in;
+}
+.topBar-nav ul a:hover li{
+    color: #d3f266;
+    
+}
+
+.header-navigation--mobile {
+    display: none;
+}
+
+/* MENU MOBILE */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.navigation-mobile-content {
+    position: absolute;
+    border-radius: 20px 0 20px 20px;
+    
+    left: 10px;
+    width: 80%;
+    height: auto;
+    background-color: #d3f266;
+    padding: 10px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    font-size: 24px;
+    font-family: Lato;
+    letter-spacing: 0px;
+    
+    }
+
+input[type="checkbox"]:checked~label~.navigation-mobile-content {
+    opacity: 1;
+    z-index: 1;
+    
+}
+
+.navigation-mobile-content ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.navigation-mobile-content ul li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+.navigation-mobile-content a {
+    display: block;
+    border: none;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #0d0d0d;
+}
+.navigation-mobile-content-img{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 50%;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.navigation-mobile-content-img img{
+    width: 110%;
+    height: 110%;
+}
+
+
+.endBar{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    padding: 140px 160px 0px 160px;
+    position: relative;
+    
+}
+
+.endBar-left{
+    width: 80%;
+}
+
+.endBar-left p{
+    font-size: 36px;
+    font-family: Lato;
+    color: #d3f266;
+    margin-top: 17px;
+}
+
+.endBar-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -90px;
+    text-align: l;
+}
+.endBar-right .linia1 img{
+    position: relative;
+    left: 17px;
+    height: 75px;
+    width: 2.5px;
+    justify-content: center;
+}
+.endBar-right .linia2 img{
+    position: relative;
+    left: 17px;
+    height: 75px;
+    width: 2.5px;
+    padding-top: 18px;
+    transition: all 0.2s ease;
+}
+
+.endBar .media img{
+    height: 110%;
+    width: 110%;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+
+.endBar .media a:hover img{
+    transform: scale(1.2);
+
+}
+
+/* offerta */
+
+.container{
+    max-width: 1085px;
+    margin: 0 auto;
+}
+.offert{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.offert .foto-left{
+    width: 416px;
+    height: 500px;
+}
+
+.offert .text-right{
+    padding-left: 30px;
+    width: 639px;
+    height: auto;
+    text-align: left;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offert .foto-right{
+    width: 416px;
+    height: 500px;
+}
+
+.offert .text-left{
+    padding-right: 30px;
+    width: 639px;
+    height: auto;
+    text-align: right;
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.offert p{
+    margin: 0;
+}
+
+/* abbonamento */
+
+.abbonamento{
+    max-width: 1085px;
+    
+    margin: 0 auto;
+    height: auto;
+}
+.abbonamento-text{
+    padding-top: 120px;
+}
+
+.abbonamento-scelta{
+    display: inline-flex;
+    flex-direction: column;
+    width: 342px;
+    height: 724px;
+    background-color: #404040;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    
+}
+
+.abbonamento-scelta:nth-child(2n+1){
+    margin: 0 25px;
+}
+
+.abbonamento-scelta-nome{
+    font-family: Lato;
+    font-size: 52px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 43px;
+    margin-bottom: 0;
+}
+
+.abbonamento-scelta-prezzo{
+    font-family: Lato;
+    font-size: 24px;
+    color: #d3f266;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.abbonamento-scelta-offerta{
+    font-family: Lato;
+    font-size: 24px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 13px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.abbonamento-gruppo{
+    height: 62%;
+}
+.button{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+}
+
+.button a:hover img{
+    background-color: #f2f2f2;
+    border-radius: 50px;
+}
+
+/* chi sono */
+
+.chisono{
+    padding-top: 250px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1085px;
+    
+    margin: 0 auto;
+}
+
+.chisono-mobile{
+    display: none;
+}
+.chisono-right{
+    height: 700px;
+    padding-left: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+}
+
+
+.chisono-text h2{
+    color: #d3f266;
+}
+
+.btn{
+    width: 316px;
+    height: 45px;
+    background-color: #d3f266;
+    border-radius: 25px;
+    font-family: Lato;
+    font-size: 24px;
+    color: #0d0d0d;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 9px 0 0px 0;
+    transition: all 0.2s ease-in;
+}
+.btn:hover{
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+}
+
+.chisono-foto img{
+    padding-top: 145px;
+}
+
+/* footer */
+
+.footer{
+    max-width: 1366px;
+    
+    height: auto;
+    background-color: #d3f266;
+    margin: 50px auto;
+}
+.footer-text{
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.footer-text ul{
+    list-style: none;
+    display: inline-table;
+    
+}
+
+.footer-text ul li{
+    font-family: Lato;
+    font-size: 24px;
+    color: #0d0d0d;
+    display: inline;
+    padding: 0 10px;
+    font-weight: 400;
+    border-left: 1px solid #0d0d0d; 
+    
+}
+
+.footer-text ul li a{
+    color: #0d0d0d;
+}
+
+
+.footer-text ul li:first-child{
+    border-left: none;
+}
+
+
+.footer-text ul li:hover a{
+    color: #f2f2f2;
+}
+
+.footer-media{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-media img{
+    height: 48px;
+    width: 48px;
+    padding: 0 5px;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+}
+
+.footer-media a:hover img{
+    transform: scale(1.2);
+}
+
+/* termini e condizioni   faq    cokies*/
+
+.terminiecondizioni{
+    color: #f2f2f2;
+    font-size: 40px;
+    max-width: 1085px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.faq{
+    color: #f2f2f2;
+    font-size: 40px;
+    max-width: 1085px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 200px 0;
+}
+.cookies{
+    color: #f2f2f2;
+    font-size: 40px;
+    max-width: 1085px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.contattami{
+    color: #f2f2f2;
+    font-size: 40px;
+    max-width: 1085px;
+    height: auto;
+    margin: 0 auto;
+    
+    padding: 100px 0;
+    display: flex;
+}
+.contattami-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+.contattami-form h1{
+    font-family: Antonio;
+    font-weight: 700;
+    font-size: 64px;
+    color: #f2f2f2;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 64px;
+}
+
+.contattami-form p{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #d3f266;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.contattami-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#nome{
+    background-color: #0d0d0d;
+    width: 90%;
+    height: 45px;
+    margin: 20px 0;
+    border: 2px solid #404040;
+    color: #f2f2f2;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    padding-left: 15px;
+    justify-content: left;
+    display: flex;
+    
+}
+#email{
+    background-color: #0d0d0d;
+    width: 90%;
+    height: 45px;
+    margin: 20px 0;
+    border: 2px solid #404040;
+    color: #f2f2f2;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    padding-left: 15px;
+    justify-content: left;
+    display: flex;
+}
+
+
+#textarea{
+    background-color: #0d0d0d;
+    width: 90%;
+    height: 200px;
+    margin: 20px 0;
+    border: 2px solid #404040;
+    color: #f2f2f2;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    padding-left: 15px;
+    justify-content: left;
+    display: flex;
+    
+}
+
+#submit{
+    background-color: #d3f266;
+    width: 50%;
+    height: 45px;
+    margin: 15px 0;
+    border-radius: 25px;
+    color: #0d0d0d;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+#submit:hover{
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+    cursor: pointer;
+}
+
+#nome:focus, #email:focus, #textarea:focus{
+    outline: 2px solid #d3f266;
+}
+
+
+
+@media(max-width: 1280px) {
+    .header{
+        background-image: url(foto/pexels-maksim-goncharenok-4422913.png);
+        max-width: 1366px;
+        
+        height: 920px;
+        margin: 0 auto;
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .topBar{
+        align-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 40px 10px 0 20px;
+        
+    }
+    .topBar-logo p{
+        font-size: 16px;
+        margin: 0;       
+        color: #f2f2f2;
+        font-family: Lato;
+        
+    }
+    
+    .header-navigation--mobile{
+        display: none;
+    }
+
+    .endBar{
+        display: flex;
+        flex-direction: row;
+        padding: 200px 15px 0px 100px;
+        position: relative;
+        
+        
+    }
+    .endBar-left{
+        width: 70%;
+    }
+       
+    .endBar-left p{
+        font-size: 30px;
+        font-family: Lato;
+        color: #d3f266;
+        margin-top: 17px;
+        padding-top: 10px;
+       
+    }
+
+    .endBar-left h1{
+        font-size: 60px;
+    }
+    .endBar-right{
+        text-align: left;
+        padding-right: 40px;
+        
+    }
+    .offert{
+        display: flex;
+        padding: 30px 10px 80px 10px;
+    
+        width: 95%;
+    }
+    
+    .offert .foto-left{
+         height: 100%;
+        text-align: justify;
+        align-self: center;
+    }
+    .foto-left img{
+        height: 80%;
+        
+    }
+    
+    .offert .text-right{
+        padding-left: 30px;
+        width: 60%;
+        height: auto;
+        text-align: left;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .offert .foto-right{
+        height: 100%;
+        text-align: justify;
+        align-self: center;
+    }
+    .foto-right img{
+        height: 80%;
+        
+    }
+    
+    .offert .text-left{
+        padding-left: 30px;
+        width: 60%;
+        height: auto;
+        text-align: left;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .offert p{
+        margin: 0;
+    }
+    
+
+    
+   
+    .abbonamento{
+        max-width: 1085px;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+    .abbonamento-text{
+        padding: 80px 20px 10px 20px;
+        
+    
+    }
+    .abbonamento-text h2{
+        font-size: 50px;
+    }
+    
+    .abbonamento-scelta{
+        
+        flex-direction: column;
+        width: 30%;
+        height: 820px;
+        background-color: #404040;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 60px;        
+    }
+
+    .abbonamento-scelta:nth-child(2n+1){
+        margin: 0 20px;
+    }
+   
+
+    .chisono-mobile{
+        display: none;
+    }
+
+    .chisono-mobile h2{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .chisono-foto{
+        text-align: center;
+    }
+
+    .chisono-foto img{
+        padding-top: 45px;
+     
+    }
+    
+    
+    .chisono-mobile p{
+        padding: 15px;
+        text-align: center;
+    }
+
+    
+   
+    
+   
+      
+}
+
+@media(max-width: 992px) {
+    .header{
+        background-image: url(foto/pexels-maksim-goncharenok-4422913.png);
+        max-width: 1366px;
+        
+        height: 920px;
+        margin: 0 auto;
+        background-position: 65% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .topBar{
+        align-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 40px 10px 0 20px;
+        
+    }
+    .topBar-logo p{
+        font-size: 16px;
+        margin: 0;       
+        color: #f2f2f2;
+        font-family: Lato;
+        
+    }
+    
+    .header-navigation--mobile{
+        display: none;
+    }
+
+    .endBar{
+        display: flex;
+        flex-direction: row;
+        padding: 200px 15px 0px 25px;
+        position: relative;
+        
+        
+    }
+    .endBar-left{
+        width: 70%;
+    }
+       
+    .endBar-left p{
+        font-size: 30px;
+        font-family: Lato;
+        color: #d3f266;
+        margin-top: 17px;
+        padding-top: 10px;
+       
+    }
+
+    .endBar-left h1{
+        font-size: 60px;
+    }
+    .endBar-right{
+        text-align: left;
+        padding-right: 40px;
+        
+    }
+    
+    .offert{
+        display: flex;
+        padding: 30px 10px 80px 10px;
+    
+        width: 95%;
+    }
+    
+    .offert .foto-left{
+         height: 100%;
+        text-align: justify;
+        align-self: center;
+    }
+    .foto-left img{
+        height: 80%;
+        
+    }
+    
+    .offert .text-right{
+        padding-left: 30px;
+        width: 60%;
+        height: auto;
+        text-align: left;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .offert .foto-right{
+        height: 100%;
+        text-align: justify;
+        align-self: center;
+    }
+    .foto-right img{
+        height: 80%;
+        
+    }
+    
+    .offert .text-left{
+        padding-left: 30px;
+        width: 60%;
+        height: auto;
+        text-align: left;
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .offert p{
+        margin: 0;
+    }
+
+    
+   
+    .abbonamento{
+        max-width: 1085px;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+    .abbonamento-text{
+        padding: 80px 20px 10px 20px;
+        
+    
+    }
+    .abbonamento-text h2{
+        font-size: 50px;
+    }
+    
+    .abbonamento-scelta{
+        
+        flex-direction: column;
+        width: 30%;
+        height: 820px;
+        background-color: #404040;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 60px;        
+    }
+
+    .abbonamento-scelta:nth-child(2n+1){
+        margin: 0 10px;
+    }
+    .chisono{
+      display: none;
+    
+    }
+
+    .chisono-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chisono-mobile h2{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .chisono-foto{
+        text-align: center;
+    }
+
+    .chisono-foto img{
+        padding-top: 45px;
+     
+    }
+    
+    
+    .chisono-mobile p{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .footer{
+        max-width: 1366px;
+        
+        height: auto;
+        background-color: #d3f266;
+        margin: 100px auto 50px auto;
+    }
+    .footer-text{
+        padding-top: 20px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    
+    .footer-text ul{
+        list-style: none;
+        margin: 0;
+        
+    }
+    
+    .footer-text ul li{
+        font-family: Lato;
+        font-size: 18px;
+        border: none;
+        display: block;
+        padding: 5px 10px;
+        font-weight: 400;
+        
+        
+        
+    }
+    
+    .footer-text ul li a{
+        color: #0d0d0d;
+    }
+    
+    .footer-media{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
+    
+    .contattami-foto{
+        display: none;
+    }
+   
+   
+   
+}
+
+@media(max-width: 768px) {
+    .header{
+        background-image: url(foto/pexels-maksim-goncharenok-4422913.png);
+        max-width: 1366px;
+        
+        height: 920px;
+        margin: 0 auto;
+        background-position: 60% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .topBar{
+        align-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 40px 10px 0 20px;
+        
+    }
+    .topBar-logo p{
+        font-size: 16px;
+        margin: 0;       
+        color: #f2f2f2;
+        font-family: Lato;
+        
+    }
+    .topBar-nav{
+        display: none;
+        
+    }
+    .navigation-mobile-content {
+        position: absolute;
+        border-radius: 20px 0 20px 20px;
+        
+        left: 10px;
+        width: 90%;
+        height: auto;
+        background-color: #d3f266;
+        padding: 10px;
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+        font-size: 24px;
+        font-family: Lato;
+        letter-spacing: 0px;
+        
+        }
+    
+    
+    .header-navigation--mobile{
+        display: block;
+    }
+
+    .endBar{
+        display: flex;
+        flex-direction: row;
+        padding: 200px 15px 0px 15px;
+        position: relative;
+        text-align: left;
+        
+    }
+    
+    .endBar-left{
+        
+    }
+    
+    .endBar-left p{
+        font-size: 30px;
+        font-family: Lato;
+        color: #d3f266;
+        margin-top: 17px;
+        padding-top: 10px;
+    }
+
+    .endBar-left h1{
+        font-size: 60px;
+    }
+    
+    .endBar-right {
+        display: none
+    }
+
+    .offert{
+        flex-direction: column;
+        
+    }
+    .offert .foto-left{
+        order: 2;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .offert .text-right{
+        order: 1;
+        text-align: center;
+        width: auto;
+        padding: 0 15px;
+    }
+    .offert .foto-right{
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    
+    .offert .text-left{
+        text-align: center;
+        width: auto;
+        padding: 0 15px;
+    }
+    .abbonamento{
+        max-width: 1085px;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+    .abbonamento-text{
+        padding: 80px 20px 10px 20px;
+        
+    
+    }
+    .abbonamento-text h2{
+        font-size: 50px;
+    }
+    
+    .abbonamento-scelta{
+        
+        flex-direction: column;
+        width: 70%;
+        height: 724px;
+        background-color: #404040;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        
+        
+        
+    }
+    .chisono{
+      display: none;
+    
+    }
+
+    .chisono-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chisono-mobile h2{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .chisono-foto{
+        text-align: center;
+    }
+
+    .chisono-foto img{
+        padding-top: 45px;
+     
+    }
+    
+    
+    .chisono-mobile p{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .footer{
+        max-width: 1366px;
+        
+        height: auto;
+        background-color: #d3f266;
+        margin: 100px auto 50px auto;
+    }
+    .footer-text{
+        padding-top: 20px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    
+    .footer-text ul{
+        list-style: none;
+        margin: 0;
+        
+    }
+    
+    .footer-text ul li{
+        font-family: Lato;
+        font-size: 18px;
+        border: none;
+        display: block;
+        padding: 5px 10px;
+        font-weight: 400;
+        
+        
+        
+    }
+    
+    .footer-text ul li a{
+        color: #0d0d0d;
+    }
+    
+    .footer-media{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
+    .contattami-foto{
+        display: none;
+    }
+    
+}
+
+@media(max-width: 576px) {
+    .header{
+        background-image: url(foto/pexels-maksim-goncharenok-4422913.png);
+        max-width: 1366px;
+        
+        height: 920px;
+        margin: 0 auto;
+        background-position: 65% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .topBar{
+        align-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        
+    }
+    .topBar-logo p{
+        font-size: 16px;
+        margin: 0;       
+        color: #f2f2f2;
+        font-family: Lato;
+        
+    }
+    .topBar-nav{
+        display: none;
+        
+    }
+
+    
+    
+    .header-navigation--mobile{
+        display: block;
+    }
+
+    .endBar{
+        display: flex;
+        flex-direction: row;
+        padding: 200px 15px 0px 15px;
+        position: relative;
+        text-align: left;
+        
+    }
+    
+    .endBar-left{
+        
+    }
+    
+    .endBar-left p{
+        font-size: 24px;
+        font-family: Lato;
+        color: #d3f266;
+        margin-top: 17px;
+        padding-top: 10px;
+    }
+
+    .endBar-left h1{
+        font-size: 48px;
+    }
+    
+    .endBar-right {
+        display: none
+    }
+
+    .offert{
+        flex-direction: column;
+        
+    }
+    .offert .foto-left{
+        order: 2;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .offert .text-right{
+        order: 1;
+        text-align: center;
+        width: auto;
+        padding: 0 15px;
+    }
+    .offert .foto-right{
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    
+    .offert .text-left{
+        text-align: center;
+        width: auto;
+        padding: 0 15px;
+    }
+    .abbonamento{
+        max-width: 1085px;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+    .abbonamento-text{
+        padding-top: 80px;
+    
+    }
+    .abbonamento-text h2{
+        font-size: 50px;
+    }
+    
+    .abbonamento-scelta{
+        
+        flex-direction: column;
+        width: 400px;
+        height: 724px;
+        background-color: #404040;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        
+        
+        
+    }
+    .chisono{
+      display: none;
+    
+    }
+
+    .chisono-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chisono-mobile h2{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    .chisono-foto{
+        text-align: center;
+    }
+
+    .chisono-foto img{
+        padding-top: 45px;
+     
+    }
+    
+    
+    .chisono-mobile p{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .footer{
+        max-width: 1366px;
+        
+        height: auto;
+        background-color: #d3f266;
+        margin: 100px auto 50px auto;
+    }
+    .footer-text{
+        padding-top: 20px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    
+    .footer-text ul{
+        list-style: none;
+        margin: 0;
+        
+    }
+    
+    .footer-text ul li{
+        font-family: Lato;
+        font-size: 18px;
+        border: none;
+        display: block;
+        padding: 5px 10px;
+        font-weight: 400;
+        
+        
+        
+    }
+    
+    .footer-text ul li a{
+        color: #0d0d0d;
+    }
+    
+    .footer-media{
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       
+    }
+    
+    .contattami-foto{
+        display: none;
+    }
+    
+
+}
+

@@ -1237,7 +1237,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     
 }
 
-@media(max-width: 450px) {
+@media(max-width: 600px) {
     .header{
         background-image: url(foto/pexels-maksim-goncharenok-4422913.png);
         max-width: 1366px;

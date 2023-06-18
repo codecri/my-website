@@ -1403,6 +1403,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
         flex-direction: column;
         width: 90vw;
         margin: 0 auto;
+        text-align: center;
     }
 
     .chisono-mobile h2{

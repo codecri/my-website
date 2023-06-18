@@ -1304,12 +1304,22 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
 
     .offert{
         flex-direction: column;
+        padding-left: 10px;
         
     }
     .offert .foto-left{
         order: 2;
         margin: 0 auto;
         padding-top: 30px;
+        text-align: center;
+        width: 90vw;
+        overflow: hidden;
+       
+    }
+
+    .offert .foto-left img{
+        width: 90%;
+        border-radius: 0px;
     }
 
     .offert .text-right{
@@ -1321,6 +1331,15 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     .offert .foto-right{
         margin: 0 auto;
         padding-top: 30px;
+        text-align: center;
+        width: 90vw;
+        overflow: hidden;
+        padding: 5px 5px;
+    }
+
+    .offert .foto-right img{
+        width: 90%;
+        border-radius: 0px;
     }
     
     .offert .text-left{
@@ -1345,7 +1364,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     .abbonamento-scelta{
         
         flex-direction: column;
-        width: 400px;
+        width: 90vw;
         height: 724px;
         background-color: #404040;
         border-radius: 10px;
@@ -1363,6 +1382,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     .chisono-mobile{
         display: flex;
         flex-direction: column;
+        width: 90vw;
     }
 
     .chisono-mobile h2{
@@ -1372,10 +1392,12 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
 
     .chisono-foto{
         text-align: center;
+        max-width: 90vw;
     }
 
     .chisono-foto img{
         padding-top: 45px;
+        max-width: 90%;
      
     }
     
@@ -1383,6 +1405,10 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     .chisono-mobile p{
         padding: 15px;
         text-align: center;
+    }
+
+    .chisono-mobile .btn{
+        max-width: 90%;
     }
 
     .footer{

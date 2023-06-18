@@ -352,7 +352,80 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
 .button a:hover img{
     background-color: #f2f2f2;
     border-radius: 50px;
+    cursor: pointer;
 }
+
+.abbonamento1{
+    max-width: 1085px;
+    margin: 0 auto;
+    height: auto;
+}
+.abbonamento-text1{
+    padding-top: 120px;
+}
+
+.abbonamento-scelta1{
+    
+    width: 95%;
+    height: auto;
+    background-color: #404040;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    
+}
+
+.abbonamento-scelta-nome1{
+    font-family: Lato;
+    font-size: 52px;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 43px;
+    margin-bottom: 0;
+    padding-top: 35px;
+}
+
+.abbonamento-scelta-prezzo1{
+    font-family: Lato;
+    font-size: 24px;
+    color: #d3f266;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+
+.abbonamento-gruppo1{
+    height: 62%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.abbonamento-gruppo1S p{
+    font-family: Lato;
+    font-size: 24px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 13px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.abbonamento1 .btn{
+    margin: 50px auto;
+    max-width: 90%;
+        
+}
+.abbonamento1 .btn a{
+    text-decoration: none;
+    color: #0d0d0d;
+}
+.abbonamento1 .btn:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
 
 /* chi sono */
 
@@ -1015,9 +1088,14 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
        
     }
     
+    .contattami{
+        margin: 0 auto;
+    }
+    
     .contattami-foto{
         display: none;
     }
+    
    
    
    
@@ -1250,6 +1328,11 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
         padding-bottom: 20px;
        
     }
+
+    .contattami{
+        margin: 0 auto;
+    }
+
     .contattami-foto{
         display: none;
     }

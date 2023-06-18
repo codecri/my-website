@@ -111,17 +111,23 @@
             <h1>allenati con me!</h1>
             <p>Compila il modulo e scrivimi se vuoi iniziare il tuo percorso, oppure se hai qualsiasi dubbio o necessità
                 di informazioni. <br>Ti risponderò nel più breve tempo possibile.</p>
-            <form class="form" action="https://formsubmit.io/send/krystianlarwa@gmail.com" method="POST">
-                <input name="_redirect" type="hidden" id="" value="https://codecri.github.io/my-website/grazie.html">
+            
+                <form id="contactform" action="https://formsubmit.io/send/krystianlarwa@gmail.com" method="POST">
+                    <input name="_redirect" type="hidden" id="name" value="https://codecri.github.io/my-website/grazie.html">
+
+
                 <label for="nome">
                     <input type="text" name="nome" id="nome" placeholder="nome" required>
                 </label>
+
                 <label for="email">
                     <input type="email" name="email" id="email" placeholder="e-mail" required>
                 </label>
                 
-                    <textarea name="textarea" id="textarea" cols="50" rows="" placeholder="messaggio" required></textarea>
-                    <input name="_formsubmit_id" type="text" style="display:none">
+                <textarea name="textarea" id="textarea" cols="50" rows="" placeholder="messaggio" required></textarea>
+
+                <input name="_formsubmit_id" type="text" style="display:none">
+
                 <label for="submit">
                     <input type="submit" name="submit" id="submit" value="invia">
                 </label>

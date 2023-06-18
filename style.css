@@ -1349,7 +1349,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     }
     .offert .foto-right{
         margin: 0 auto;
-        padding-top: 30px;
+       
         text-align: center;
         width: 90vw;
         overflow: hidden;
@@ -1366,6 +1366,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
         width: auto;
         padding: 0 10px;
         text-align: center;
+         padding-top: 30px;
     }
     .abbonamento{
         max-width: 1085px;

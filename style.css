@@ -1314,7 +1314,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     }
 
     .endBar-left h1{
-        font-size: 48px;
+        font-size: 45px;
     }
     
     .endBar-right {
@@ -1333,7 +1333,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
         text-align: center;
         width: 90vw;
         overflow: hidden;
-       
+        padding: 5px 5px;
     }
 
     .offert .foto-left img{
@@ -1345,7 +1345,7 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
         order: 1;
         text-align: center;
         width: auto;
-        padding: 0 15px;
+        padding: 0 10px;
     }
     .offert .foto-right{
         margin: 0 auto;
@@ -1364,7 +1364,8 @@ input[type="checkbox"]:checked~label~.navigation-mobile-content {
     .offert .text-left{
         text-align: center;
         width: auto;
-        padding: 0 15px;
+        padding: 0 10px;
+        text-align: center;
     }
     .abbonamento{
         max-width: 1085px;
